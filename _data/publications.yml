@@ -4,8 +4,9 @@
 # Your name is bolded automatically.
 - title: "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks"
   authors: Seongho Son, Sangwoong Yoon, Jiahua Tang, Shuhan Wang, Lorenz Wolf, Ilija Bogunovic
-  venue: Preprint
+  venue: ICML
   year: 2026
+  note: 5th Deep Learning for Code Workshop
   links:
     paper: https://arxiv.org/abs/2607.00053
 

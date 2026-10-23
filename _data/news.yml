@@ -5,6 +5,9 @@
 - date: Sep 2026
   text: >-
     [LLM-WikiRace](https://llmwikirace.github.io) accepted at the **NeurIPS 2026 Datasets & Benchmarks Track**.
+- date: Jul 2026
+  text: >-
+    Presented [SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks](https://arxiv.org/abs/2607.00053) at the **5th Deep Learning for Code Workshop** at ICML 2026.
 - date: Mar 2026
   text: >-
     Started a research fellowship at [Vmax](https://vmax.ai) in San Francisco, working on unsupervised environment design, open-endedness and LLM post-training.
