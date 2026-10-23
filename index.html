@@ -38,7 +38,7 @@ layout: null
     <img class="photo" src="{{ p.photo | relative_url }}" alt="Photo of {{ p.name }}" width="180" height="180">
     <div>
       <h1>{{ p.name }}</h1>
-      <p class="role">{{ p.role }}</p>
+      <p class="role">{% for r in p.roles %}{{ r | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
       <p class="links">
         {%- for l in p.links -%}
           <a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% unless forloop.last %}<span class="sep">/</span>{% endunless %}

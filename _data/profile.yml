@@ -1,5 +1,8 @@
 name: Lorenz Wolf
-role: PhD Student, Foundational AI CDT, University College London
+# One line per role under your name (Markdown allowed)
+roles:
+  - PhD Student, Foundational AI CDT, University College London
+  - Research Fellow, [Vmax](https://vmax.ai)
 photo: /assets/img/profile.jpg
 email: lorenz.wolf.22@ucl.ac.uk
 links:
