@@ -8,6 +8,8 @@ lang: en
 news_shown: 8
 
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
 exclude:
   - README.md
   - Gemfile
