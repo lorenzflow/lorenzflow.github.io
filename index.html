@@ -1,0 +1,121 @@
+---
+layout: null
+---
+{%- assign p = site.data.profile -%}
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ p.photo | absolute_url }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<main>
+  <header class="intro">
+    <img class="photo" src="{{ p.photo | relative_url }}" alt="Photo of {{ p.name }}" width="180" height="180">
+    <div>
+      <h1>{{ p.name }}</h1>
+      <p class="role">{{ p.role }}</p>
+      <p class="links">
+        {%- for l in p.links -%}
+          <a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% unless forloop.last %}<span class="sep">/</span>{% endunless %}
+        {%- endfor -%}
+      </p>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+  </nav>
+
+  <section id="about">
+    {% capture about %}{% include about.md %}{% endcapture %}
+    {{ about | markdownify }}
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      {%- for n in site.data.news limit: site.news_shown -%}
+      <li><span class="date">{{ n.date }}</span><span>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+      {%- endfor -%}
+    </ul>
+    {%- if site.data.news.size > site.news_shown -%}
+    <details>
+      <summary>Show all news</summary>
+      <ul class="news">
+        {%- for n in site.data.news offset: site.news_shown -%}
+        <li><span class="date">{{ n.date }}</span><span>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+        {%- endfor -%}
+      </ul>
+    </details>
+    {%- endif -%}
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    {%- for pub in site.data.publications -%}
+    <article class="pub{% if pub.image %} has-img{% endif %}">
+      {%- if pub.image -%}
+      <img src="{{ pub.image | relative_url }}" alt="" loading="lazy">
+      {%- endif -%}
+      <div>
+        <h3>{% if pub.links.paper %}<a href="{{ pub.links.paper }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+        <p class="authors">{{ pub.authors | replace: p.name, '<strong>Lorenz Wolf</strong>' }}</p>
+        <p class="venue">{{ pub.venue }} {{ pub.year }}{% if pub.note %} · <em>{{ pub.note }}</em>{% endif %}</p>
+        <p class="pub-links">
+          {%- for l in pub.links -%}<a href="{{ l[1] | relative_url }}">[{{ l[0] }}]</a> {% endfor -%}
+        </p>
+        {%- if pub.abstract -%}
+        <details><summary>Abstract</summary><p>{{ pub.abstract }}</p></details>
+        {%- endif -%}
+      </div>
+    </article>
+    {%- endfor -%}
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="cv">
+      {%- for e in site.data.experience -%}
+      <li>
+        <div><strong>{{ e.role }}</strong>, {% if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}
+          {%- if e.note %}<br><span class="muted">{{ e.note }}</span>{% endif %}</div>
+        <span class="date">{{ e.start }} – {% if e.end == "" or e.end == nil %}present{% else %}{{ e.end }}{% endif %}</span>
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <h2>Education</h2>
+    <ul class="cv">
+      {%- for e in site.data.education -%}
+      <li>
+        <div><strong>{{ e.degree }}</strong>, {{ e.org }}
+          {%- if e.note %}<br><span class="muted">{{ e.note }}</span>{% endif %}</div>
+        <span class="date">{{ e.years }}</span>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="projects">
+      {%- for pr in site.data.projects -%}
+      <li><strong>{{ pr.title }}</strong>. {{ pr.text }}
+        {% for l in pr.links %}<a href="{{ l[1] | relative_url }}">[{{ l[0] }}]</a> {% endfor %}</li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+  <footer>© {{ site.time | date: '%Y' }} {{ p.name }}</footer>
+</main>
+</body>
+</html>

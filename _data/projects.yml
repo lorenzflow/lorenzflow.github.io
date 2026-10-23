@@ -1,0 +1,13 @@
+- title: VAEs on Hilbert spaces to generate functional data
+  text: MSc thesis on synthesising functional data with variational autoencoders, by representing functions in a basis.
+  links:
+    thesis: /assets/uploads/FDA_Thesis.pdf
+    slides: /assets/uploads/FDA_Slides.pdf
+- title: MCMC and some variations
+  text: Implemented and compared standard and adaptive MCMC, and parallel tempering for sampling from a bimodal distribution.
+  links:
+    report: /assets/uploads/mcmc-report.pdf
+- title: Statistically modelling the spread of HIV
+  text: UROP with Dr Oliver Ratmann; phylogeographic analysis of HIV transmission with continuous-time Markov models and BSSVS.
+  links:
+    reference: https://www.nature.com/articles/s41598-018-37458-x

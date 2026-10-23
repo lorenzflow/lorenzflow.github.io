@@ -1,0 +1,17 @@
+name: Lorenz Wolf
+role: PhD Student, Foundational AI CDT, University College London
+photo: /assets/img/profile.jpg
+email: lorenz.wolf.22@ucl.ac.uk
+links:
+  - name: Email
+    url: mailto:lorenz.wolf.22@ucl.ac.uk
+  - name: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=zaJYpewAAAAJ
+  - name: GitHub
+    url: https://github.com/lorenzflow
+  - name: Twitter
+    url: https://x.com/lorenz_wlf
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/lorenz-l-wolf
+  # - name: CV
+  #   url: /assets/uploads/cv.pdf

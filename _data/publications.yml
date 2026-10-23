@@ -1,0 +1,93 @@
+# Publications, newest first. Fields: title, authors, venue, year, image (optional),
+# note (optional, e.g. "Spotlight" or "Workshop"), links (name -> url),
+# abstract (optional, shown behind a toggle).
+# Your name is bolded automatically.
+- title: "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks"
+  authors: Seongho Son, Sangwoong Yoon, Jiahua Tang, Shuhan Wang, Lorenz Wolf, Ilija Bogunovic
+  venue: Preprint
+  year: 2026
+  links:
+    paper: https://arxiv.org/abs/2607.00053
+
+- title: "Breaking the Solver Bottleneck: Training Task Generators at the Learnable Frontier"
+  authors: Lorenz Wolf, Connor Watts, Roger Creus Castanyer, Geoffrey Bradway, Maxwill Lin, Augustine N. Mavor-Parker, Matthew Daborn-Sargent
+  venue: Preprint
+  year: 2026
+  links:
+    paper: https://arxiv.org/abs/2606.18284
+
+- title: "unix-ctf: Procedural Environments for Unix-Competence Reinforcement Learning"
+  authors: Geoffrey Bradway, Roger Creus Castanyer, Lorenz Wolf, Maxwill Lin, Matthew James Sargent, Augustine N. Mavor-Parker
+  venue: Preprint
+  year: 2026
+  links:
+    paper: https://arxiv.org/abs/2605.29115
+
+- title: "PopuLoRA: Co-Evolving LLM Populations for Reasoning Self-Play"
+  authors: Roger Creus Castanyer, Geoffrey Bradway, Lorenz Wolf, Maxwill Lin, Augustine N. Mavor-Parker, Matthew James Sargent
+  venue: Preprint
+  year: 2026
+  links:
+    paper: https://arxiv.org/abs/2605.16727
+
+- title: "LLM-WikiRace Benchmark: How Far Can LLMs Plan over Real-World Knowledge Graphs?"
+  authors: Juliusz Ziomek, William Bankes, Lorenz Wolf, Shyam Sundhar Ramesh, Xiaohang Tang, Ilija Bogunovic
+  venue: NeurIPS
+  year: 2026
+  note: Datasets & Benchmarks Track
+  links:
+    paper: https://arxiv.org/abs/2602.16902
+    website: https://llmwikirace.github.io
+
+- title: Post-training Large Language Models for Diverse High-Quality Responses
+  authors: Yilei Chen, Souradip Chakraborty, Lorenz Wolf, Ioannis Paschalidis, Aldo Pacchiano
+  venue: ICLR
+  year: 2026
+  links:
+    paper: https://arxiv.org/abs/2509.04784
+
+- title: Reward Model Overoptimisation in Iterated RLHF
+  authors: Lorenz Wolf, Robert Kirk, Mirco Musolesi
+  venue: NeurIPS
+  year: 2025
+  note: ARLET Workshop
+  links:
+    paper: https://arxiv.org/abs/2505.18126
+
+- title: "This Is Your Doge, If It Please You: Exploring Deception and Robustness in Mixture of LLMs"
+  authors: Lorenz Wolf, Sangwoong Yoon, Ilija Bogunovic
+  venue: ICML
+  year: 2025
+  note: Multi-Agent Systems Workshop
+  links:
+    paper: https://arxiv.org/abs/2503.05856
+    code: https://github.com/lorenzflow/robust-moa
+  abstract: >-
+    Mixture of large language model (LLMs) Agents (MoA) architectures achieve state-of-the-art performance on prominent benchmarks like AlpacaEval 2.0 by leveraging the collaboration of multiple LLMs at inference time. Despite these successes, an evaluation of the safety and reliability of MoA is missing. We present the first comprehensive study of MoA's robustness against deceptive LLM agents that deliberately provide misleading responses. We examine factors like the propagation of deceptive information, model size, and information availability, and uncover critical vulnerabilities. On AlpacaEval 2.0, the popular LLaMA 3.1-70B model achieves a length-controlled Win Rate (LC WR) of 49.2% when coupled with 3-layer MoA (6 LLM agents). However, we demonstrate that introducing only a single carefully-instructed deceptive agent into the MoA can reduce performance to 37.9%, effectively nullifying all MoA gains. On QuALITY, a multiple-choice comprehension task, the impact is also severe, with accuracy plummeting by a staggering 48.5%. Inspired in part by the historical Doge of Venice voting process, designed to minimize influence and deception, we propose a range of unsupervised defense mechanisms that recover most of the lost performance.
+
+- title: Heterogeneous Knowledge for Augmented Modular Reinforcement Learning
+  authors: Lorenz Wolf, Mirco Musolesi
+  venue: Transactions on Machine Learning Research (TMLR)
+  year: 2025
+  links:
+    paper: https://arxiv.org/abs/2306.01158
+  abstract: >-
+    In order to mitigate some of the inefficiencies of Reinforcement Learning (RL), modular approaches composing different decision-making policies to derive agents capable of performing a variety of tasks have been proposed. The modules at the basis of these architectures are generally reusable, also allowing for "plug-and-play" integration. However, such solutions still lack the ability to process and integrate multiple types of information (knowledge), such as rules, sub-goals, and skills. We propose Augmented Modular Reinforcement Learning (AMRL) to address these limitations. This new framework uses an arbitrator to select heterogeneous modules and seamlessly incorporate different types of knowledge. Additionally, we introduce a variation of the selection mechanism, namely the Memory-Augmented Arbitrator, which adds the capability of exploiting temporal information. We evaluate the proposed mechanisms on established as well as new environments and benchmark them against prominent deep RL algorithms. Our results demonstrate the performance improvements that can be achieved by augmenting traditional modular RL with other forms of heterogeneous knowledge.
+
+- title: Private Selection with Heterogeneous Sensitivities
+  authors: Daniela Antonova, Allegra Laro, Audra McMillan, Lorenz Wolf
+  venue: SaTML
+  year: 2025
+  links:
+    paper: https://arxiv.org/abs/2501.05309
+  abstract: >-
+    Differentially private (DP) selection involves choosing a high-scoring candidate from a finite candidate pool, where each score depends on a sensitive dataset. This problem arises naturally in a variety of contexts including model selection, hypothesis testing, and within many DP algorithms. Classical methods, such as Report Noisy Max (RNM), assume all candidates' scores are equally sensitive to changes in a single individual's data, but this often isn't the case. To address this, algorithms like the Generalised Exponential Mechanism (GEM) leverage variability in candidate sensitivities. However, we observe that while these algorithms can outperform RNM in some situations, they may underperform in others - they can even perform worse than random selection. In this work, we explore how the distribution of scores and sensitivities impacts DP selection mechanisms. In all settings we study, we find that there exists a mechanism that utilises heterogeneity in the candidate sensitivities that outperforms standard mechanisms like RNM. However, no single mechanism uniformly outperforms RNM. We propose using the correlation between the scores and sensitivities as the basis for deciding which DP selection mechanism to use. Further, we design a slight variant of GEM, modified GEM that generally performs well whenever GEM performs poorly. Relying on the correlation heuristic we propose combined GEM, which adaptively chooses between GEM and modified GEM and outperforms both in polarised settings.
+
+- title: Energy-Based Models for Functional Data Using Path Measure Tilting
+  authors: Jen Ning Lim, Sebastian Vollmer, Lorenz Wolf, Andrew Duncan
+  venue: AISTATS
+  year: 2023
+  links:
+    paper: https://arxiv.org/abs/2202.01929
+  abstract: >-
+    Energy-Based Models (EBMs) have proven to be a highly effective approach for modelling densities on finite-dimensional spaces. Their ability to incorporate domain-specific choices and constraints into the structure of the model through composition make EBMs an appealing candidate for applications in physics, biology and computer vision and various other fields. In this work, we present a novel class of EBM which is able to learn distributions of functions (such as curves or surfaces) from functional samples evaluated at finitely many points. Two unique challenges arise in the functional context. Firstly, training data is often not evaluated along a fixed set of points. Secondly, steps must be taken to control the behaviour of the model between evaluation points, to mitigate overfitting. The proposed infinite-dimensional EBM employs a latent Gaussian process, which is weighted spectrally by an energy function parameterised with a neural network. The resulting EBM has the ability to utilize irregularly sampled training data and can output predictions at any resolution, providing an effective approach to up-scaling functional data. We demonstrate the efficacy of our proposed approach for modelling a range of datasets, including data collected from Standard and Poor's 500 (S&P) and UK National grid.

@@ -1,0 +1,43 @@
+# News, newest first. To add an item, copy an entry to the top and edit it.
+# `date` is free text (e.g. "Oct 2026"); `text` supports Markdown (links, **bold**).
+# Keep the `>-` after `text:` and indent the text on the next line; that way
+# colons and quotes in the text are safe.
+- date: Sep 2026
+  text: >-
+    [LLM-WikiRace](https://llmwikirace.github.io) accepted at the **NeurIPS 2026 Datasets & Benchmarks Track**.
+- date: Mar 2026
+  text: >-
+    Started a research fellowship at [Vmax](https://vmax.ai) in San Francisco, working on unsupervised environment design, open-endedness and LLM post-training.
+- date: Jan 2026
+  text: >-
+    [Post-training LLMs for Diverse High-Quality Responses](https://arxiv.org/abs/2509.04784) accepted at **ICLR 2026**.
+- date: Dec 2025
+  text: >-
+    [Heterogeneous Knowledge for Augmented Modular RL](https://arxiv.org/abs/2306.01158) published in **TMLR**.
+- date: Dec 2025
+  text: >-
+    Presented [Reward Model Overoptimisation in Iterated RLHF](https://arxiv.org/abs/2505.18126) at the **ARLET workshop** at NeurIPS 2025.
+- date: Jul 2025
+  text: >-
+    Presented [This Is Your Doge, If It Please You: Exploring Deception and Robustness in Mixture of LLMs](https://arxiv.org/abs/2503.05856) at the **Multi-Agent Systems workshop** at ICML 2025.
+- date: May 2025
+  text: >-
+    Attended **RLDM 2025** in Dublin.
+- date: Mar 2025
+  text: >-
+    New preprint, [This Is Your Doge, If It Please You: Exploring Deception and Robustness in Mixture of LLMs](https://arxiv.org/abs/2503.05856).
+- date: Jan 2025
+  text: >-
+    [Private Selection with Heterogeneous Sensitivities](https://arxiv.org/abs/2501.05309) accepted at **SaTML 2025**.
+- date: Jun 2023
+  text: >-
+    New preprint on [Augmented Modular Reinforcement Learning](https://arxiv.org/abs/2306.01158).
+- date: May 2023
+  text: >-
+    Started a second ML research placement at **Apple**.
+- date: Jan 2023
+  text: >-
+    [Energy-Based Models for Functional Data](https://arxiv.org/abs/2202.01929) accepted at **AISTATS 2023**.
+- date: Sep 2022
+  text: >-
+    Started my PhD on the Foundational AI CDT at **UCL**.

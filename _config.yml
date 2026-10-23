@@ -1,0 +1,14 @@
+title: Lorenz Wolf
+description: PhD student in Foundational AI at UCL working on reinforcement learning, multi-agent systems and generative models.
+url: https://lorenzflow.github.io
+baseurl: ""      # leave empty for a <user>.github.io repo
+lang: en
+
+# How many news items to show before the "Show all news" toggle
+news_shown: 8
+
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,37 @@
+# Experience, newest first. `end` empty = present.
+- role: PhD, Foundational AI CDT
+  org: UCL
+  url: https://www.ucl.ac.uk/ai-centre/
+  start: Sep 2022
+  end: ""
+  note: RL, multi-agent systems and LLM post-training
+- role: Research Fellow
+  org: Vmax
+  url: https://vmax.ai
+  start: Mar 2026
+  end: ""
+  note: San Francisco, part-time since Jul 2026. Unsupervised environment design, open-endedness and LLM post-training
+- role: Machine Learning Research Placement
+  org: Apple
+  start: May 2023
+  end: Sep 2023
+- role: Machine Learning Research Placement
+  org: Apple
+  start: Jun 2022
+  end: Sep 2022
+- role: Machine Learning Research Intern
+  org: tmc2
+  url: https://tmc2.ai/
+  start: May 2022
+  end: Jun 2022
+  note: Machine learning for music synthesis
+- role: Teaching Assistant
+  org: Imperial College London
+  start: Aug 2020
+  end: Sep 2020
+  note: Teaching materials for the 3rd-year module Stochastic Simulation
+- role: Undergraduate Researcher (UROP)
+  org: Imperial College London
+  start: Aug 2019
+  end: Sep 2019
+  note: Statistical modelling of the spread of HIV
